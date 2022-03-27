@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block body %}
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Compare colleges</h1>
+
+<p></p>
+
+<form action="/action_page.php">
+  <label for="cars">Choose a college:</label>
+  <select name="cars" id="cars">
+    <optgroup label="IIT">
+      <option value="IIT BOMBAY">IIT BOMBAY</option>
+    </optgroup>
+    <optgroup label="NIT">
+      <option value="NIT">NIT TRICHY</option>
+    </optgroup>
+    <optgroup label="IIIT">
+        <option value="IIIT">IIIT ALLAHABAD</option>
+      </optgroup>
+  </select>
+  <br><br>
+  <label for="cars">Choose a college:</label>
+  <select name="cars" id="cars">
+    <optgroup label="IIT">
+      <option value="IIT BOMBAY">IIT BOMBAY</option>
+    </optgroup>
+    <optgroup label="NIT">
+      <option value="NIT">NIT TRICHY</option>
+    </optgroup>
+    <optgroup label="IIIT">
+        <option value="NIT">IIIT Allahabad</option>
+      </optgroup>
+  </select>
+  <br><br>
+ 
+  <input type="submit" value="Submit">
+</form>
+ 
+</body>
+</html>
+
+{% endblock body %}
