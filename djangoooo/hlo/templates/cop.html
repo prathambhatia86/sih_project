@@ -1,45 +1,76 @@
 {% extends 'base.html' %}
 {% block body %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+	<link
+	rel="stylesheet"
+	href=
+"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+	<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
+	</script>
+	<script src=
+"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+	</script>
+</head>
 <body>
+	<h3 style="color: green">
+	<b>Scholarships</b>
+	</h3>
+	<div class="row">
+	<div class="col-sm-6 col-md-3">
+		<a href="#" class="thumbnail">
+		<img
+			src=
+"/static/scholarship.jpg"
+			style="height: 100px; width: 100px"
+		/>
+		</a>
+		<div class="caption">
+		<h3 style="color: green">ABC Scholarship(code-001)</h3>
+		
+<p>
+		scholarship for students having family income less than 5 lakh per year.
+		</p>
 
-<h1>Compare colleges</h1>
 
-<p></p>
+		
+<p>
+			<a href="#" class="btn btn-success">
+			Learn More
+			</a>
+		</p>
 
-<form action="/action_page.php">
-  <label for="cars">Choose a college:</label>
-  <select name="cars" id="cars">
-    <optgroup label="IIT">
-      <option value="IIT BOMBAY">IIT BOMBAY</option>
-    </optgroup>
-    <optgroup label="NIT">
-      <option value="NIT">NIT TRICHY</option>
-    </optgroup>
-    <optgroup label="IIIT">
-        <option value="IIIT">IIIT ALLAHABAD</option>
-      </optgroup>
-  </select>
-  <br><br>
-  <label for="cars">Choose a college:</label>
-  <select name="cars" id="cars">
-    <optgroup label="IIT">
-      <option value="IIT BOMBAY">IIT BOMBAY</option>
-    </optgroup>
-    <optgroup label="NIT">
-      <option value="NIT">NIT TRICHY</option>
-    </optgroup>
-    <optgroup label="IIIT">
-        <option value="NIT">IIIT Allahabad</option>
-      </optgroup>
-  </select>
-  <br><br>
- 
-  <input type="submit" value="Submit">
-</form>
- 
+
+		</div>
+	</div>
+	<div class="col-sm-6 col-md-3">
+		<a href="#" class="thumbnail">
+		<img src="/static/scholarship.jpg"
+			style="height: 100px; width: 100px"
+		/>
+		</a>
+		<div class="caption">
+		<h3 style="color: green">DEF Scholarship(Code-002)</h3>
+		
+<p>
+		Scholarship for students who cleared national scholarship exam.
+		</p>
+
+
+		
+<p>
+			<a href="#" class="btn btn-success">
+			Learn More
+			</a>
+		</p>
+
+
+		</div>
+
 </body>
 </html>
+
 
 {% endblock body %}
